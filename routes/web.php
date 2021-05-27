@@ -17,6 +17,28 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/berita', function () {
+    return view('berita');
+});
 
+Route::get('/galeri', function () {
+    return view('galeri');
+});
+
+Route::get('/profil', function () {
+    return view('profil');
+});
+
+Route::get('/layanan', function () {
+    return view('layanan');
+});
+
+Route::get('/aduan', function () {
+    return view('aduan');
+});
+
+Route::get('/kontak', function () {
+    return view('kontak');
+});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->name('auth.login');

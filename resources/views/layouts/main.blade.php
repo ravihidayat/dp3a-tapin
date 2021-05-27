@@ -35,13 +35,13 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto order-1 p-2 d-flex">
-                        <a class="nav-item nav-link active p-2" href="#">Beranda <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link p-2" href="#">Berita</a>
-                        <a class="nav-item nav-link p-2" href="#">Galeri</a>
-                        <a class="nav-item nav-link p-2" href="#">Profil</a>
-                        <a class="nav-item nav-link p-2" href="#">Layanan</a>
-                        <a class="nav-item nav-link p-2" href="#">Buat Aduan</a>
-                        <a class="nav-item nav-link p-2" href="#">Kontak</a>
+                        <a class="nav-item nav-link active p-2" href="{{ url('/') }}">Beranda <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link p-2" href="{{ url('/berita') }}">Berita</a>
+                        <a class="nav-item nav-link p-2" href="{{ url('/galeri') }}">Galeri</a>
+                        <a class="nav-item nav-link p-2" href="{{ url('/profil') }}">Profil</a>
+                        <a class="nav-item nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
+                        <a class="nav-item nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
+                        <a class="nav-item nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
                     </div>
                 </div>
             </nav>
@@ -51,18 +51,24 @@
             </main>
 
             <footer>
-                <nav class="navbar navbar-expand-lg navbar-dark d-flex" style="background: #0B0D17">
-                    <div class="mx-auto p-2">
-                        <a class="navbar-brand mx-auto" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
+                <nav class="navbar navbar-expand-lg navbar-dark" style="background: #0B0D17">
+                    <div class="mx-auto p-2 d-flex flex-column">
+                        <div class="p-2">
+
+                            <a class="navbar-brand justify-content-center align-middle" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav mx-auto p-2 d-flex">
-                                <a class="nav-item nav-link active p-2" href="#">Beranda <span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link p-2" href="#">Berita</a>
-                                <a class="nav-item nav-link p-2" href="#">Galeri</a>
-                                <a class="nav-item nav-link p-2" href="#">Profil</a>
-                                <a class="nav-item nav-link p-2" href="#">Layanan</a>
-                                <a class="nav-item nav-link p-2" href="#">Buat Aduan</a>
-                                <a class="nav-item nav-link p-2" href="#">Kontak</a>
+                                <a class="nav-item nav-link active p-2" href="{{ url('/') }}">Beranda <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link p-2" href="{{ url('/berita') }}">Berita</a>
+                                <a class="nav-item nav-link p-2" href="{{ url('/galeri') }}">Galeri</a>
+                                <a class="nav-item nav-link p-2" href="{{ url('/profil') }}">Profil</a>
+                                <a class="nav-item nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
+                                <a class="nav-item nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
+                                <a class="nav-item nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
                             </div>
                         </div>
                     </div>
