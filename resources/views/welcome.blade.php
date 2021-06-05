@@ -13,6 +13,22 @@
         <div class="container p-2">
             <p class="lead">Untuk menikmati layanan atau membuat aduan,
                 silahkan tekan tombol yang ada di bawah. </p>
+            <div class="d-flex justify-content-start">
+                @guest
+                @if (Route::has('login'))
+                <a class="btn btn-light" href="{{ route('login') }}" role="button">Masuk</a>
+                @endif
+
+                @if (Route::has('register'))
+                <a class="btn btn-dark" href="{{ route('register') }}" role="button">Daftar</a>
+                @endif
+
+                @else
+                <a class="btn btn-light" href="{{ url('/layanan') }}" role="button">Layanan</a>
+                <a class="btn btn-dark" href="{{ url('/aduan') }}" role="button">Aduan</a>
+
+                @endguest
+            </div>
         </div>
     </div>
 </div>
