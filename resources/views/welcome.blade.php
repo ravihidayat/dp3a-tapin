@@ -2,16 +2,16 @@
 
 @section('content')
 <div class="jumbotron jumbotron-fluid">
-    <div class="d-flex">
-        <div class="container p-2">
-            <h1 class="display-4">Selamat datang di Website
+    <div class="row p-5">
+        <div class="col-7">
+            <h1 class="display-5">Selamat datang di Website
                 Pusat Pelayanan dan Pengaduan Terpadu
                 Dinas Pemberdayaan Perempuan
                 dan Perlindungan Anak (DP3A)
                 Kabupaten Tapin</h1>
         </div>
-        <div class="container p-2">
-            <p class="lead">Untuk menikmati layanan atau membuat aduan,
+        <div class="col-5">
+            <p class="lead text-left">Untuk menikmati layanan atau membuat aduan,
                 silahkan tekan tombol yang ada di bawah. </p>
             <div class="d-flex justify-content-start">
                 @guest
@@ -34,11 +34,11 @@
 </div>
 
 <div class="berita">
-    <h1>Berita</h1>
+    <h1 class="text-center">Berita</h1>
 </div>
 
 <div class="galeri">
-    <h1>Galeri</h1>
+    <h1 class="text-center">Galeri</h1>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
