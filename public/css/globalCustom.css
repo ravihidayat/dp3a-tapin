@@ -62,3 +62,7 @@ footer {
   width: 100%;
   height: 2.5rem;  
 }
+
+.margine-footer {
+    margin-bottom: 2.5rem!important;
+}

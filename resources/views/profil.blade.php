@@ -5,10 +5,10 @@
     <div class="row p-5">
         <div class="col-7">
             <div class="container p-2">
-                <h1 class="display-4">Mari berkenalan dengan tim kami!</h1>
+                <h1 class="display-4 page-header">Mari berkenalan dengan tim kami!</h1>
             </div>
             <div class="container p-2">
-                <p class="lead">Cari tahu lebih banyak tentang DP3A Kab. Tapin di sini.</p>
+                <p class="lead page-sub-header">Cari tahu lebih banyak tentang DP3A Kab. Tapin di sini.</p>
             </div>
         </div>
         <div class="col-5">
@@ -33,17 +33,17 @@
 <div class="struktur p-3 text-center">
     <h2 class="p-2">Struktur Organisasi</h2>
 
-        <div class="khpk p-2">
-            <h3>Bidang Kualitas Hidup Perempuan dan Keluarga</h1>
-        </div>
+    <div class="khpk p-2">
+        <h3>Bidang Kualitas Hidup Perempuan dan Keluarga</h1>
+    </div>
 
-        <div class="pha p-2">
-            <h3>Bidang Pemenuhan Hak Anak</h1>
-        </div>
+    <div class="pha p-2">
+        <h3>Bidang Pemenuhan Hak Anak</h1>
+    </div>
 
-        <div class="PPADI p-2">
-            <h3>Bidang Perlindungan Perempuan Anak dan Data Informasi</h1>
-        </div>
+    <div class="PPADI p-2">
+        <h3>Bidang Perlindungan Perempuan Anak dan Data Informasi</h1>
+    </div>
 
 </div>
 @endsection

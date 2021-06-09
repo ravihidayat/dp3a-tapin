@@ -5,10 +5,10 @@
     <div class="row p-5">
         <div class="col-7">
             <div class="container p-2">
-                <h1 class="display-4">Hubungi Kami</h1>
+                <h1 class="display-4 page-header">Hubungi Kami</h1>
             </div>
             <div class="container p-2">
-                <p class="lead">Jika anda memiliki pertanyaan atau membutuhkan informasi seputar layanan kami, silahkan menghubungi kami.</p>
+                <p class="lead page-sub-header">Jika anda memiliki pertanyaan atau membutuhkan informasi seputar layanan kami, silahkan menghubungi kami.</p>
             </div>
         </div>
         <div class="col-5">

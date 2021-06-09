@@ -5,11 +5,11 @@
     <div class="row p-5">
         <div class="col-7">
             <div class="container">
-                <h1 class="display-4">Tetap update, </h1>
-                <h1 class="display-4">ikuti berita terbaru kami</h1>
+                <h1 class="display-4 page-header">Tetap update, </h1>
+                <h1 class="display-4 page-header">ikuti berita terbaru kami</h1>
             </div>
             <div class="container">
-                <p class="lead">Baca dan nikmati berita terbaru dari aktivitas dan kegiatan yang kami laksanakan di sini.</p>
+                <p class="lead page-sub-header">Baca dan nikmati berita terbaru dari aktivitas dan kegiatan yang kami laksanakan di sini.</p>
             </div>
         </div>
         <div class="col-5">
@@ -29,13 +29,17 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="..." alt="First slide">
+                <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Siji</h5>
+                <p>Eko</p>
+            </div>
+        </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
+                <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -49,19 +53,19 @@
     </div>
     <div class="row p-5">
         <div class="col-3">Berita1</div>
-        
+
         <div class="col-3">Berita2</div>
-        
+
         <div class="col-3">Berita3</div>
-        
+
         <div class="col-3">Berita4</div>
 
         <div class="col-3">Berita5</div>
-        
+
         <div class="col-3">Berita6</div>
-        
+
         <div class="col-3">Berita7</div>
-        
+
         <div class="col-3">Berita8</div>
     </div>
 </div>

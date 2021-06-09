@@ -4,14 +4,14 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="row p-5">
         <div class="col-7">
-            <h1 class="display-5">Selamat datang di Website
+            <h1 class="display-5 page-header">Selamat datang di Website
                 Pusat Pelayanan dan Pengaduan Terpadu
                 Dinas Pemberdayaan Perempuan
                 dan Perlindungan Anak (DP3A)
                 Kabupaten Tapin</h1>
         </div>
         <div class="col-5">
-            <p class="lead text-left">Untuk menikmati layanan atau membuat aduan,
+            <p class="lead text-left page-sub-header">Untuk menikmati layanan atau membuat aduan,
                 silahkan tekan tombol yang ada di bawah. </p>
             <div class="d-flex justify-content-start">
                 @guest
@@ -47,20 +47,20 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="..." alt="First slide">
+                <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First Slide Label</h5>
                     <p>Mock Slide</p>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="..." alt="Second slide">
+                    <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First Slide Label</h5>
                         <p>Mock Slide</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="..." alt="Third slide">
+                    <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First Slide Label</h5>
                         <p>Mock Slide</p>
