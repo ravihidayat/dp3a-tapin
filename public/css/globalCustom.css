@@ -1,4 +1,64 @@
-.app {
-    background: linear-gradient(230.64deg, #F1E4FF 20.5%, #8C30F5 65.57%);
-opacity: 0.5;
+.auth-background {
+    background-image: linear-gradient(230.64deg, #F1E4FF 20.5%, #8C30F5 65.57%);
+    /* background-image: linear-gradient(to right, black, rgb(4, 44, 4)); */
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: overlay;
+}
+
+.card-body-login {
+    background: #F1E4FF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.card-body-register {
+    background: #F1E4FF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+
+.auth-header {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bolder;
+    color: #979797;
+}
+
+.auth-textfield {
+    border: 1px solid #979797;
+    border-radius: 10px;
+    height: 50px;
+}
+
+.auth-button {
+    background-color: #979797;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
 }
