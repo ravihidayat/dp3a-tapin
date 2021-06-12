@@ -64,12 +64,12 @@
             </div>
         </nav>
 
-        <main class="margine-footer">
+        <main class="margine-footer main-custom">
             @yield('content')
         </main>
 
         <footer>
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background: #0B0D17">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background: #0B0D17">
                 <div class="mx-auto p-2 d-flex flex-column">
                     <div class="p-2">
 

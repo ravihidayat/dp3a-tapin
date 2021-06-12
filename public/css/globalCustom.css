@@ -64,5 +64,31 @@ footer {
 }
 
 .margine-footer {
-    margin-bottom: 2.5rem!important;
+    margin-bottom: 0.5rem!important;
+}
+
+.main-custom {
+    height: auto;
+    width: auto;
+}
+
+.navbar-custom {
+    height: auto;
+    width: auto;
+}
+
+#slider .carousel-item-custom {
+    height:500px;
+  }
+  
+  .carousel-caption-custom {
+    font-size: 18px;
+  }
+  
+  .carousel-item-custom>img {
+    width: 100%;
+  }
+
+.jumbotron-custom {
+    background-color: #8C30F5;
 }

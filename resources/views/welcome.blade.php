@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid jumbotron-custom">
     <div class="row p-5">
         <div class="col-7">
             <h1 class="display-5 page-header">Selamat datang di Website
@@ -39,44 +39,50 @@
 
 <div class="galeri">
     <h1 class="text-center">Galeri</h1>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First Slide Label</h5>
-                    <p>Mock Slide</p>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First Slide Label</h5>
-                        <p>Mock Slide</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First Slide Label</h5>
-                        <p>Mock Slide</p>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <div class="carousel slide" id="slider" data-ride="carousel">
+  <!--indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#slider" data-slide-to="0" class="active"></li>
+    <li data-target="#slider" data-slide-to="1"></li>
+    <li data-target="#slider" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item carousel-item-custom active">
+      <img src="https://picsum.photos/1000/600/">
+      <div class="carousel-caption carousel-caption-custom">
+        <h4>Welcome</h4>
+        <p>Travel! Enjoy!</p>
+      </div>
     </div>
+
+    <div class="carousel-item carousel-item-custom" id="slide2">
+      <img src="https://picsum.photos/1000/600/">
+      <div class="carousel-caption carousel-caption-custom">
+        <h4>Welcome</h4>
+        <p>Travel! Enjoy!</p>
+      </div>
+    </div>
+
+    <div class="carousel-item carousel-item-custom" id="slide3">
+      <img src="https://picsum.photos/1000/600/">
+      <div class="carousel-caption carousel-caption-custom">
+        <h4>Welcome</h4>
+        <p>Travel! Enjoy!</p>
+      </div>
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>     
 <div class="hubungi-kami">
 
