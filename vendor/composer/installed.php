@@ -6,11 +6,20 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'd49157dea837df6b4a55d16ec5aa263d5418a648',
+    'reference' => '890dbaf64330b3dbe57eb4a9e2b6bb87ddd4ea0f',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
   array (
+    'arrilot/laravel-widgets' => 
+    array (
+      'pretty_version' => '3.13.1',
+      'version' => '3.13.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ae0e44ce625026ae71c6ab9259f89f13af227e37',
+    ),
     'asm89/stack-cors' => 
     array (
       'pretty_version' => 'v2.0.3',
@@ -517,7 +526,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'd49157dea837df6b4a55d16ec5aa263d5418a648',
+      'reference' => '890dbaf64330b3dbe57eb4a9e2b6bb87ddd4ea0f',
     ),
     'laravel/sail' => 
     array (

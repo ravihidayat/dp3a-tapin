@@ -76,8 +76,9 @@
                 </a>
             </div>
         </div>
+    </div>
+</div>     
+<div class="hubungi-kami">
 
-        <div class="hubungi-kami">
-
-        </div>
-        @endsection
+</div>
+@endsection
