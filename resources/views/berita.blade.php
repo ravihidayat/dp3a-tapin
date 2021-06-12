@@ -31,10 +31,10 @@
             <div class="carousel-item active">
                 <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                <h5>Siji</h5>
-                <p>Eko</p>
+                    <h5>Siji</h5>
+                    <p>Eko</p>
+                </div>
             </div>
-        </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="{{ asset('assets/kantor.jpg') }}" alt="Second slide">
             </div>

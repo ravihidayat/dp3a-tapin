@@ -26,8 +26,8 @@
 
 <body class="app">
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light d-flex" style="background: rgba(240, 234, 247, 0.8)">
-            <div class="mr-auto order-0 p-2">
+        <nav class="navbar navbar-expand-lg navbar-light d-flex px-4" style="background: rgba(240, 234, 247, 0.8)">
+            <div class="mr-auto order-0 p-2 px-4">
                 <a class="navbar-brand mr-auto" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
