@@ -23,8 +23,8 @@
 </head>
 
 <body class="app">
-    <img src="{{ asset('assets/kantor.jpg') }}" alt="Kantor">
-    <div id="overlay" class="auth-background"></div>
+    <img src="{{ asset('assets/grkhd.jpg') }}" alt="Kantor">
+    <!-- <div id="overlay" class="auth-background"></div> -->
     <main class="py-4">
         @yield('content')
     </main>

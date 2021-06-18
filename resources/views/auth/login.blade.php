@@ -1,12 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="auth-margin"></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div class="card mx-auto">
-
-                <div class="card-body card-body-login">
+            <div class="card-custom mx-auto">
+                <div class="col-4 login-logo-jarak">
+                    <img class="login-logo" src="{{ asset('assets/logo.png') }}" alt="Logo">
+                </div>
+                <div class="card-body card-body-login login-jarak">
                     <div class="text-center mb-3">
                         <h1 class="auth-header">{{ __('Login') }}</h1>
                     </div>

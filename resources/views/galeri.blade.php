@@ -1,9 +1,9 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid jumbotron-galeri">
     <div class="row p-5">
-        <div class="col-7">
+        <div class="col-7 galeri-caption">
             <div class="container p-2">
                 <h1 class="display-4 page-header">Tetap update, </h1>
                 <h1 class="display-4 page-header">ikuti foto-foto terbaru kami</h1>
@@ -14,11 +14,14 @@
         </div>
         <div class="col-5">
             <!-- Put picture here -->
+            <img src="{{ asset('assets/galeri.png') }}" alt="Galeri" class="galeri-img">
         </div>
     </div>
+    <div class="row gelombang"><img src="{{ asset('assets/gelombang.png') }}" alt="Gelombang"></div>
 </div>
 
-<div class="galeri">
+
+<div class="galeri galeri-p2">
     <div class="row p-5">
         <div class="col-3">Galeri1</div>
 

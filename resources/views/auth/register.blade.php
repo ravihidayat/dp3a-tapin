@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="auth-margin"></div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            <div class="card mx-auto">
+            <div class="card-custom mx-auto">
 
                 <div class="card-body card-body-register">
                     <div class="text-center mb-3">
@@ -79,10 +80,10 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary mx-auto d-block auth-button">
+                                <button type="submit" class="btn btn-primary mx-auto d-block register-auth-button">
                                     {{ __('Register') }}
                                 </button>
-
+                                <br>
                                 <p>Sudah punya akun? <a href="{{ route('login') }}">Login</a></p>
                             </div>
                         </div>

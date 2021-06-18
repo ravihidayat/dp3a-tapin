@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Fav Icon -->
+    <link rel="icon" href="{{ URL::asset('assets/favicon.ico') }}" type="image/x-icon"/>
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -17,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -25,23 +29,30 @@
 </head>
 
 <body class="app">
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light d-flex px-4" style="background: rgba(240, 234, 247, 0.8)">
+    <div id="font-nav">
+        <nav class="navbar navbar-expand-lg navbar-main-custom d-flex px-4">
             <div class="mr-auto order-0 p-2 px-4">
-                <a class="navbar-brand mr-auto" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
+                <a class="navbar-brand mr-auto navbar-brand-custom" href="{{ url('/') }}"> <img src="{{asset('assets/logo.png')}}" alt="Logo"> <span class="text-wrap"> {{ config('app.name', 'Laravel') }}</span> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse navbar-kotak" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto order-1 p-2 d-flex">
-                    <a class="nav-item nav-link p-2" href="{{ url('/') }}">Beranda</a>
-                    <a class="nav-item nav-link p-2" href="{{ url('/berita') }}">Berita</a>
-                    <a class="nav-item nav-link p-2" href="{{ url('/galeri') }}">Galeri</a>
-                    <a class="nav-item nav-link p-2" href="{{ url('/profil') }}">Profil</a>
-                    <a class="nav-item nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
-                    <a class="nav-item nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
-                    <a class="nav-item nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
+                    <a class="nav-item {{ Request::path() === '/' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/') }}">Beranda</a>
+                    <a class="nav-item {{ Request::path() === 'berita' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/berita') }}">Berita</a>
+                    <a class="nav-item {{ Request::path() === 'galeri' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/galeri') }}">Galeri</a>
+                    <a class="nav-item {{ Request::path() === 'profil' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/profil') }}">Profil</a>
+                    <a class="nav-item {{ Request::path() === 'layanan' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
+                    <a class="nav-item {{ Request::path() === 'aduan' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
+                    <a class="nav-item {{ Request::path() === 'kontak' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
+                    <a class="nav-item {{ Request::path() === 'dashboard' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/dashboard') }}">
+                        <div class="profile">
+                            <div class="profile-circle">
+                                <div class="profile-user"><img src="{{asset('assets/user.png')}}" alt="User"></div>
+                            </div>
+                        </div>
+                    </a>
                     @if(Auth::user())
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,30 +80,31 @@
         </main>
 
         <footer>
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background: #0B0D17">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
                 <div class="mx-auto p-2 d-flex flex-column">
                     <div class="p-2">
 
-                        <a class="navbar-brand justify-content-center align-middle" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
+                        <a class="navbar-brand justify-content-center align-middle font-footer" href="{{ url('/') }}"><img src="{{asset('assets/logo.png')}}" alt="Logo" class="footer-logo"><span class="text-wrap">{{ config('app.name', 'Laravel') }}</span></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltBottom" aria-controls="navbarNavAltBottom" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
                     <div class="collapse navbar-collapse" id="navbarNavAltBottom">
                         <div class="navbar-nav mx-auto p-2 d-flex">
-                            <a class="nav-item nav-link p-2" href="{{ url('/') }}">Beranda</a>
-                            <a class="nav-item nav-link p-2" href="{{ url('/berita') }}">Berita</a>
-                            <a class="nav-item nav-link p-2" href="{{ url('/galeri') }}">Galeri</a>
-                            <a class="nav-item nav-link p-2" href="{{ url('/profil') }}">Profil</a>
-                            <a class="nav-item nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
-                            <a class="nav-item nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
-                            <a class="nav-item nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
+                            <a class="nav-item {{ Request::path() === '/' ? 'active' : ''}} nav-link p-2" href="{{ url('/') }}">Beranda</a>
+                            <a class="nav-item {{ Request::path() === 'berita' ? 'active' : ''}} nav-link p-2" href="{{ url('/berita') }}">Berita</a>
+                            <a class="nav-item {{ Request::path() === 'galeri' ? 'active' : ''}} nav-link p-2" href="{{ url('/galeri') }}">Galeri</a>
+                            <a class="nav-item {{ Request::path() === 'profil' ? 'active' : ''}} nav-link p-2" href="{{ url('/profil') }}">Profil</a>
+                            <a class="nav-item {{ Request::path() === 'layanan' ? 'active' : ''}} nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
+                            <a class="nav-item {{ Request::path() === 'aduan' ? 'active' : ''}} nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
+                            <a class="nav-item {{ Request::path() === 'kontak' ? 'active' : ''}} nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
                         </div>
                     </div>
                 </div>
             </nav>
         </footer>
     </div>
+    
     
 </body>
 
