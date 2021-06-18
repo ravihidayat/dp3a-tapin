@@ -19,7 +19,7 @@
     <div class="row gelombang"><img src="{{ asset('assets/gelombang.png') }}" alt="Gelombang"></div>
 </div>
 
-<div class="hubungi galeri-p2 hub">
+<div class="hubungi galeri-p2">
     <h1 class="text-center">Hubungi Kami</h1>
     <p class="text-center">Mohon perhatian, pesan akan kami balas dalam jangka waktu 12 jam kerja</p>
     <div class="form text-center">
