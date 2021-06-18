@@ -117,13 +117,16 @@
     }
     
     footer {
-        position: fixed;
-        left: 0;
+        position: absolute;
+        /* left: 0; */
+        /* right: 0; */
         bottom: 0;
         width: 100%;
         background-color: black;
         color: white;
         text-align: center;
+        height: 200px;
+        margin-bottom: -160%;
     }
     
     .margine-footer {

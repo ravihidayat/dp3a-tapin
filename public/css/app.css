@@ -6,7 +6,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-
 :root {
   --blue: #3490dc;
   --indigo: #6574cd;
@@ -20014,21 +20013,4 @@ h3 {
 .card .card-body {
   justify-content: center;
   align-items: center;
-}
-
-html, body {
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-@media (max-width: 768px){
-  .page-header, .display-4 {
-    font-size: 20px;
-  }
-
-  .page-sub-header, .lead {
-    font-size: 16px;
-  }
-
 }
