@@ -180,9 +180,9 @@
     <li data-target="#slider" data-slide-to="1"></li>
     <li data-target="#slider" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner carousel-inner-custom justify-content-center">
+  <div class="carousel-inner carousel-inner-custom justify-content-center berita2-img">
     <div class="carousel-item carousel-item-custom active">
-      <img src="https://picsum.photos/1000/600/">
+      <img src="https://picsum.photos/1000/600/"> 
       <div class="carousel-caption carousel-caption-custom">
         <h4>Welcome</h4>
         <p>Travel! Enjoy!</p>
