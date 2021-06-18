@@ -31,6 +31,36 @@
         /* border-radius: 20px; */
     }
     
+    .card-title {
+        /* IBM Plex / Subtitle 1 */
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        /* Black */
+        color: #000000;
+    }
+    
+    .card-text {
+        /* IBM Plex / Body 2 */
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 142%;
+        /* or 20px */
+        letter-spacing: 0.0168em;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        /* Grey / 06 */
+        color: #414141;
+    }
+    
     .card-body-login {
         background: #F1E4FF;
         border: 1px solid #FFFFFF;
@@ -245,7 +275,7 @@
         position: absolute;
         width: 600px;
         left: 33%;
-        font-family: Montserrat;
+        font-family: Poppins;
         font-size: 28px;
         font-style: normal;
         font-weight: 600;
@@ -256,7 +286,7 @@
     }
     
     .font-welc {
-        font-family: Montserrat;
+        font-family: Poppins;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
