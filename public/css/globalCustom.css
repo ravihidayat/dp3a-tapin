@@ -117,13 +117,16 @@
     }
     
     footer {
-        position: fixed;
+        position: absolute;
         left: 0;
+        right: 0;
         bottom: 0;
         width: 100%;
         background-color: black;
         color: white;
         text-align: center;
+        height: 200px;
+        margin-bottom: -2800px;
     }
     
     .margine-footer {
@@ -213,7 +216,7 @@
     .berita {
         position: absolute;
         height: 100%;
-        left: 0px;
+        /* left: 900px; */
         top: 755px;
         width: 100%;
     }
@@ -973,9 +976,30 @@
     }
     
     .profile-user {
-        position: absolute;
+        position: static;
         width: 16px;
         height: 19px;
         left: 1858px;
         top: 25px;
+        padding-left: 4%;
+        z-index: 2;
+    }
+
+    .ml-auto-custom .dropdown-menu-custom {
+        left: auto !important;
+        right: 0px;
+    }
+
+    .dropdown-menu-custom {
+        display: inline-block;
+        right: 5%;
+        position: absolute;
+    }
+
+    .dropdown-menu-arrow {
+        top: -25px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        position: relative;
     }

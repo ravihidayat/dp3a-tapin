@@ -39,7 +39,7 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse navbar-kotak" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto order-1 p-2 d-flex">
+                <div class="navbar-nav ml-auto ml-auto-custom order-1 p-2 d-flex">
                     <a class="nav-item {{ Request::path() === '/' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/') }}">Beranda</a>
                     <a class="nav-item {{ Request::path() === 'berita' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/berita') }}">Berita</a>
                     <a class="nav-item {{ Request::path() === 'galeri' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/galeri') }}">Galeri</a>
@@ -47,23 +47,34 @@
                     <a class="nav-item {{ Request::path() === 'layanan' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
                     <a class="nav-item {{ Request::path() === 'aduan' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
                     <a class="nav-item {{ Request::path() === 'kontak' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
-                    <a class="nav-item {{ Request::path() === 'dashboard' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/dashboard') }}">
+             
+                    @if(!Auth::check())
+                    <a class="nav-item {{ Request::path() === 'dashboard' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ route('login') }}">
                         <div class="profile">
                             <div class="profile-circle">
                                 <div class="profile-user"><img src="{{asset('assets/user.png')}}" alt="User"></div>
                             </div>
                         </div>
                     </a>
-                    @if(Auth::user())
+                    @elseif(Auth::check())
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ Auth::user()->name }}
+                        <a class="nav-item nav-item-custom nav-link dropdown-toggle p-2" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="profile d-inline-block">
+                                <div class="profile-circle">
+                                    <img class="profile-user ml-1" src="{{asset('assets/user.png')}}" alt="User">
+                                </div>
+                            </div>
                         </a>
 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu dropdown-menu-custom mr-8" aria-labelledby="navbarDropdown">
+                            
+                            <a class="dropdown-item" href="{{ url('/dashboard') }}">
+                                {{ Auth::user()->name }}
+                            </a>
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                                {{ __('Keluar') }}
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -72,41 +83,44 @@
                         </div>
                     </li>
                     @endif
+                    
                 </div>
             </div>
         </nav>
 
-        <main class="margine-footer main-custom">
+        <main class="main-custom">
             @yield('content')
         </main>
 
-        <footer>
-            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-                <div class="mx-auto p-2 d-flex flex-column">
-                    <div class="p-2">
-
-                        <a class="navbar-brand justify-content-center align-middle font-footer" href="{{ url('/') }}"><img src="{{asset('assets/logo.png')}}" alt="Logo" class="footer-logo"><span class="text-wrap">{{ config('app.name', 'Laravel') }}</span></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltBottom" aria-controls="navbarNavAltBottom" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarNavAltBottom">
-                        <div class="navbar-nav mx-auto p-2 d-flex">
-                            <a class="nav-item {{ Request::path() === '/' ? 'active' : ''}} nav-link p-2" href="{{ url('/') }}">Beranda</a>
-                            <a class="nav-item {{ Request::path() === 'berita' ? 'active' : ''}} nav-link p-2" href="{{ url('/berita') }}">Berita</a>
-                            <a class="nav-item {{ Request::path() === 'galeri' ? 'active' : ''}} nav-link p-2" href="{{ url('/galeri') }}">Galeri</a>
-                            <a class="nav-item {{ Request::path() === 'profil' ? 'active' : ''}} nav-link p-2" href="{{ url('/profil') }}">Profil</a>
-                            <a class="nav-item {{ Request::path() === 'layanan' ? 'active' : ''}} nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
-                            <a class="nav-item {{ Request::path() === 'aduan' ? 'active' : ''}} nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
-                            <a class="nav-item {{ Request::path() === 'kontak' ? 'active' : ''}} nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
+            <footer>
+                <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+                    <div class="mx-auto p-2 d-flex flex-column">
+                        <div class="p-2">
+    
+                            <a class="navbar-brand justify-content-center align-middle font-footer" href="{{ url('/') }}"><img src="{{asset('assets/logo.png')}}" alt="Logo" class="footer-logo"><span class="text-wrap">{{ config('app.name', 'Laravel') }}</span></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltBottom" aria-controls="navbarNavAltBottom" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarNavAltBottom">
+                            <div class="navbar-nav mx-auto p-2 d-flex">
+                                <a class="nav-item {{ Request::path() === '/' ? 'active' : ''}} nav-link p-2" href="{{ url('/') }}">Beranda</a>
+                                <a class="nav-item {{ Request::path() === 'berita' ? 'active' : ''}} nav-link p-2" href="{{ url('/berita') }}">Berita</a>
+                                <a class="nav-item {{ Request::path() === 'galeri' ? 'active' : ''}} nav-link p-2" href="{{ url('/galeri') }}">Galeri</a>
+                                <a class="nav-item {{ Request::path() === 'profil' ? 'active' : ''}} nav-link p-2" href="{{ url('/profil') }}">Profil</a>
+                                <a class="nav-item {{ Request::path() === 'layanan' ? 'active' : ''}} nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
+                                <a class="nav-item {{ Request::path() === 'aduan' ? 'active' : ''}} nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
+                                <a class="nav-item {{ Request::path() === 'kontak' ? 'active' : ''}} nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </footer>
+                </nav>
+            </footer>
     </div>
     
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
