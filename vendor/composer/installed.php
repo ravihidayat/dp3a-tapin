@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '481c58b383080490aa7bb6f380636c093aeff03f',
+    'reference' => '98c5e73e21e3fd6f6b393c8abfe7cf58e3e156de',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -28,6 +28,24 @@
       array (
       ),
       'reference' => '9cb795bf30988e8c96dd3c40623c48a877bc6714',
+    ),
+    'backpack/crud' => 
+    array (
+      'pretty_version' => '4.1.48',
+      'version' => '4.1.48.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '53bc6028f445f9b2ecfb8893283f6b6087539353',
+    ),
+    'backpack/generators' => 
+    array (
+      'pretty_version' => 'v3.1.9',
+      'version' => '3.1.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5cb564a0d9f3b18754bdb50a48eb645d99f82af0',
     ),
     'bacon/bacon-qr-code' => 
     array (
@@ -56,12 +74,30 @@
       ),
       'reference' => 'dff976c2f3487d42c1db75a3b180e2b9f0e72ce0',
     ),
+    'composer/package-versions-deprecated' => 
+    array (
+      'pretty_version' => '1.11.99.2',
+      'version' => '1.11.99.2',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c6522afe5540d5fc46675043d3ed5a45a740b27c',
+    ),
     'cordoval/hamcrest-php' => 
     array (
       'replaced' => 
       array (
         0 => '*',
       ),
+    ),
+    'creativeorange/gravatar' => 
+    array (
+      'pretty_version' => 'v1.0.20',
+      'version' => '1.0.20.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8c2c1a3a59fdf05f50c9d9413dd9d2d50835e017',
     ),
     'dasprid/enum' => 
     array (
@@ -492,6 +528,15 @@
         0 => '*',
       ),
     ),
+    'laracasts/generators' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0b8b3d300cc948217f7547502b6de5db6fbafa70',
+    ),
     'laravel/fortify' => 
     array (
       'pretty_version' => 'v1.7.14',
@@ -526,7 +571,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '481c58b383080490aa7bb6f380636c093aeff03f',
+      'reference' => '98c5e73e21e3fd6f6b393c8abfe7cf58e3e156de',
     ),
     'laravel/sail' => 
     array (
@@ -646,6 +691,13 @@
       array (
       ),
       'reference' => 'b5cb36122f1c142c3c3ee20a0ae778439ef0244b',
+    ),
+    'ocramius/package-versions' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '1.11.99',
+      ),
     ),
     'opis/closure' => 
     array (
@@ -790,6 +842,15 @@
       array (
       ),
       'reference' => '26c4c5cf30a2844ba121760fd7301f8ad240100b',
+    ),
+    'prologue/alerts' => 
+    array (
+      'pretty_version' => '0.4.8',
+      'version' => '0.4.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a6412e318c0171526bc8b25ef597f2cc61f5b800',
     ),
     'psr/container' => 
     array (

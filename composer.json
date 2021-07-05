@@ -7,6 +7,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "arrilot/laravel-widgets": "^3.13",
+        "backpack/crud": "4.1.*",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -16,9 +17,11 @@
         "laravel/ui": "^3.2"
     },
     "require-dev": {
+        "backpack/generators": "^3.1",
         "brackets/admin-generator": "^6.1",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
+        "laracasts/generators": "^2.0",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",

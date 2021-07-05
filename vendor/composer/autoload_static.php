@@ -21,9 +21,9 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
-        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
@@ -101,10 +101,12 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
+            'Prologue\\Alerts\\' => 16,
             'PragmaRX\\Google2FA\\' => 19,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
             'ParagonIE\\ConstantTime\\' => 23,
+            'PackageVersions\\' => 16,
         ),
         'O' => 
         array (
@@ -127,6 +129,7 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Sail\\' => 13,
             'Laravel\\Fortify\\' => 16,
+            'Laracasts\\Generators\\' => 21,
         ),
         'I' => 
         array (
@@ -172,6 +175,7 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'C' => 
         array (
             'Cron\\' => 5,
+            'Creativeorange\\Gravatar\\' => 24,
             'Carbon\\' => 7,
         ),
         'B' => 
@@ -179,6 +183,8 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
             'Brick\\Math\\' => 11,
             'Brackets\\AdminGenerator\\' => 24,
             'BaconQrCode\\' => 12,
+            'Backpack\\Generators\\' => 20,
+            'Backpack\\CRUD\\' => 14,
         ),
         'A' => 
         array (
@@ -360,6 +366,10 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
+        'Prologue\\Alerts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/prologue/alerts/src',
+        ),
         'PragmaRX\\Google2FA\\' => 
         array (
             0 => __DIR__ . '/..' . '/pragmarx/google2fa/src',
@@ -375,6 +385,10 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'ParagonIE\\ConstantTime\\' => 
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
+        ),
+        'PackageVersions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions',
         ),
         'Opis\\Closure\\' => 
         array (
@@ -415,6 +429,10 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'Laravel\\Fortify\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/fortify/src',
+        ),
+        'Laracasts\\Generators\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laracasts/generators/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -525,6 +543,10 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
+        'Creativeorange\\Gravatar\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/creativeorange/gravatar/src',
+        ),
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
@@ -540,6 +562,14 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'BaconQrCode\\' => 
         array (
             0 => __DIR__ . '/..' . '/bacon/bacon-qr-code/src',
+        ),
+        'Backpack\\Generators\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/backpack/generators/src',
+        ),
+        'Backpack\\CRUD\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/backpack/crud/src',
         ),
         'Asm89\\Stack\\' => 
         array (
@@ -621,6 +651,114 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Backpack\\CRUD\\BackpackServiceProvider' => __DIR__ . '/..' . '/backpack/crud/src/BackpackServiceProvider.php',
+        'Backpack\\CRUD\\LicenseCheck' => __DIR__ . '/..' . '/backpack/crud/src/LicenseCheck.php',
+        'Backpack\\CRUD\\Stats' => __DIR__ . '/..' . '/backpack/crud/src/Stats.php',
+        'Backpack\\CRUD\\app\\Console\\Commands\\AddCustomRouteContent' => __DIR__ . '/..' . '/backpack/crud/src/app/Console/Commands/AddCustomRouteContent.php',
+        'Backpack\\CRUD\\app\\Console\\Commands\\AddSidebarContent' => __DIR__ . '/..' . '/backpack/crud/src/app/Console/Commands/AddSidebarContent.php',
+        'Backpack\\CRUD\\app\\Console\\Commands\\CreateUser' => __DIR__ . '/..' . '/backpack/crud/src/app/Console/Commands/CreateUser.php',
+        'Backpack\\CRUD\\app\\Console\\Commands\\Install' => __DIR__ . '/..' . '/backpack/crud/src/app/Console/Commands/Install.php',
+        'Backpack\\CRUD\\app\\Console\\Commands\\PublishBackpackMiddleware' => __DIR__ . '/..' . '/backpack/crud/src/app/Console/Commands/PublishBackpackMiddleware.php',
+        'Backpack\\CRUD\\app\\Console\\Commands\\PublishView' => __DIR__ . '/..' . '/backpack/crud/src/app/Console/Commands/PublishView.php',
+        'Backpack\\CRUD\\app\\Console\\Commands\\Traits\\PrettyCommandOutput' => __DIR__ . '/..' . '/backpack/crud/src/app/Console/Commands/Traits/PrettyCommandOutput.php',
+        'Backpack\\CRUD\\app\\Console\\Commands\\Version' => __DIR__ . '/..' . '/backpack/crud/src/app/Console/Commands/Version.php',
+        'Backpack\\CRUD\\app\\Exceptions\\AccessDeniedException' => __DIR__ . '/..' . '/backpack/crud/src/app/Exceptions/AccessDeniedException.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\AdminController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/AdminController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Auth/ForgotPasswordController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Auth/LoginController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Auth/RegisterController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Auth/ResetPasswordController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\BaseController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/BaseController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\ChartController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/ChartController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\CrudController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/CrudController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\MyAccountController' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/MyAccountController.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\BulkCloneOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/BulkCloneOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\BulkDeleteOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/BulkDeleteOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\CloneOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/CloneOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\CreateOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/CreateOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\DeleteOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/DeleteOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\FetchOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/FetchOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\InlineCreateOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/InlineCreateOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\ListOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/ListOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\ReorderOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/ReorderOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\ShowOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/ShowOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Controllers\\Operations\\UpdateOperation' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Controllers/Operations/UpdateOperation.php',
+        'Backpack\\CRUD\\app\\Http\\Middleware\\CheckIfAdmin' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Middleware/CheckIfAdmin.php',
+        'Backpack\\CRUD\\app\\Http\\Middleware\\UseBackpackAuthGuardInsteadOfDefaultAuthGuard' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Middleware/UseBackpackAuthGuardInsteadOfDefaultAuthGuard.php',
+        'Backpack\\CRUD\\app\\Http\\Requests\\AccountInfoRequest' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Requests/AccountInfoRequest.php',
+        'Backpack\\CRUD\\app\\Http\\Requests\\ChangePasswordRequest' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Requests/ChangePasswordRequest.php',
+        'Backpack\\CRUD\\app\\Http\\Requests\\CrudRequest' => __DIR__ . '/..' . '/backpack/crud/src/app/Http/Requests/CrudRequest.php',
+        'Backpack\\CRUD\\app\\Library\\Auth\\AuthenticatesUsers' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Auth/AuthenticatesUsers.php',
+        'Backpack\\CRUD\\app\\Library\\Auth\\ConfirmsPasswords' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Auth/ConfirmsPasswords.php',
+        'Backpack\\CRUD\\app\\Library\\Auth\\PasswordBroker' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Auth/PasswordBroker.php',
+        'Backpack\\CRUD\\app\\Library\\Auth\\PasswordBrokerManager' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Auth/PasswordBrokerManager.php',
+        'Backpack\\CRUD\\app\\Library\\Auth\\RedirectsUsers' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Auth/RedirectsUsers.php',
+        'Backpack\\CRUD\\app\\Library\\Auth\\RegistersUsers' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Auth/RegistersUsers.php',
+        'Backpack\\CRUD\\app\\Library\\Auth\\ResetsPasswords' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Auth/ResetsPasswords.php',
+        'Backpack\\CRUD\\app\\Library\\Auth\\ThrottlesLogins' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Auth/ThrottlesLogins.php',
+        'Backpack\\CRUD\\app\\Library\\Auth\\VerifiesEmails' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Auth/VerifiesEmails.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\CrudButton' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/CrudButton.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\CrudColumn' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/CrudColumn.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\CrudField' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/CrudField.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\CrudFilter' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/CrudFilter.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\CrudPanel' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/CrudPanel.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\CrudPanelFacade' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/CrudPanelFacade.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Access' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Access.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\AutoFocus' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/AutoFocus.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\AutoSet' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/AutoSet.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Buttons' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Buttons.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Columns' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Columns.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\ColumnsProtectedMethods' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/ColumnsProtectedMethods.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Create' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Create.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Delete' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Delete.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Errors' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Errors.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\FakeColumns' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/FakeColumns.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\FakeFields' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/FakeFields.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Fields' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Fields.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\FieldsPrivateMethods' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/FieldsPrivateMethods.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\FieldsProtectedMethods' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/FieldsProtectedMethods.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Filters' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Filters.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\HeadingsAndTitles' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/HeadingsAndTitles.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Macroable' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Macroable.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Operations' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Operations.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Query' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Query.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Read' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Read.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Relationships' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Relationships.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Reorder' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Reorder.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\SaveActions' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/SaveActions.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Search' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Search.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Settings' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Settings.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Tabs' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Tabs.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Update' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Update.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Validation' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Validation.php',
+        'Backpack\\CRUD\\app\\Library\\CrudPanel\\Traits\\Views' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/CrudPanel/Traits/Views.php',
+        'Backpack\\CRUD\\app\\Library\\Widget' => __DIR__ . '/..' . '/backpack/crud/src/app/Library/Widget.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\CrudTrait' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/CrudTrait.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\HasEnumFields' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/HasEnumFields.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\HasFakeFields' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/HasFakeFields.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\HasIdentifiableAttribute' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/HasIdentifiableAttribute.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\HasRelationshipFields' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/HasRelationshipFields.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\HasTranslatableFields' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/HasTranslatableFields.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\HasUploadFields' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/HasUploadFields.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\SpatieTranslatable\\HasTranslations' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/SpatieTranslatable/HasTranslations.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\SpatieTranslatable\\SlugService' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/SpatieTranslatable/SlugService.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\SpatieTranslatable\\Sluggable' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/SpatieTranslatable/Sluggable.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\SpatieTranslatable\\SluggableObserver' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/SpatieTranslatable/SluggableObserver.php',
+        'Backpack\\CRUD\\app\\Models\\Traits\\SpatieTranslatable\\SluggableScopeHelpers' => __DIR__ . '/..' . '/backpack/crud/src/app/Models/Traits/SpatieTranslatable/SluggableScopeHelpers.php',
+        'Backpack\\CRUD\\app\\Notifications\\ResetPasswordNotification' => __DIR__ . '/..' . '/backpack/crud/src/app/Notifications/ResetPasswordNotification.php',
+        'Backpack\\Generators\\Console\\Commands\\BuildBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/BuildBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\ChartBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/ChartBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\ChartControllerBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/ChartControllerBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\ConfigBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/ConfigBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\CrudBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/CrudBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\CrudControllerBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/CrudControllerBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\CrudModelBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/CrudModelBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\CrudOperationBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/CrudOperationBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\CrudRequestBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/CrudRequestBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\ModelBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/ModelBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\RequestBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/RequestBackpackCommand.php',
+        'Backpack\\Generators\\Console\\Commands\\ViewBackpackCommand' => __DIR__ . '/..' . '/backpack/generators/src/Console/Commands/ViewBackpackCommand.php',
+        'Backpack\\Generators\\GeneratorsServiceProvider' => __DIR__ . '/..' . '/backpack/generators/src/GeneratorsServiceProvider.php',
         'BaconQrCode\\Common\\BitArray' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Common/BitArray.php',
         'BaconQrCode\\Common\\BitMatrix' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Common/BitMatrix.php',
         'BaconQrCode\\Common\\BitUtils' => __DIR__ . '/..' . '/bacon/bacon-qr-code/src/Common/BitUtils.php',
@@ -798,6 +936,10 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Creativeorange\\Gravatar\\Exceptions\\InvalidEmailException' => __DIR__ . '/..' . '/creativeorange/gravatar/src/Exceptions/InvalidEmailException.php',
+        'Creativeorange\\Gravatar\\Facades\\Gravatar' => __DIR__ . '/..' . '/creativeorange/gravatar/src/Facades/Gravatar.php',
+        'Creativeorange\\Gravatar\\Gravatar' => __DIR__ . '/..' . '/creativeorange/gravatar/src/Gravatar.php',
+        'Creativeorange\\Gravatar\\GravatarServiceProvider' => __DIR__ . '/..' . '/creativeorange/gravatar/src/GravatarServiceProvider.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -3105,6 +3247,13 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Laracasts\\Generators\\Commands\\MigrationMakeCommand' => __DIR__ . '/..' . '/laracasts/generators/src/Commands/MigrationMakeCommand.php',
+        'Laracasts\\Generators\\Commands\\PivotMigrationMakeCommand' => __DIR__ . '/..' . '/laracasts/generators/src/Commands/PivotMigrationMakeCommand.php',
+        'Laracasts\\Generators\\GeneratorException' => __DIR__ . '/..' . '/laracasts/generators/src/GeneratorException.php',
+        'Laracasts\\Generators\\GeneratorsServiceProvider' => __DIR__ . '/..' . '/laracasts/generators/src/GeneratorsServiceProvider.php',
+        'Laracasts\\Generators\\Migrations\\NameParser' => __DIR__ . '/..' . '/laracasts/generators/src/Migrations/NameParser.php',
+        'Laracasts\\Generators\\Migrations\\SchemaParser' => __DIR__ . '/..' . '/laracasts/generators/src/Migrations/SchemaParser.php',
+        'Laracasts\\Generators\\Migrations\\SyntaxBuilder' => __DIR__ . '/..' . '/laracasts/generators/src/Migrations/SyntaxBuilder.php',
         'Laravel\\Fortify\\Actions\\AttemptToAuthenticate' => __DIR__ . '/..' . '/laravel/fortify/src/Actions/AttemptToAuthenticate.php',
         'Laravel\\Fortify\\Actions\\CompletePasswordReset' => __DIR__ . '/..' . '/laravel/fortify/src/Actions/CompletePasswordReset.php',
         'Laravel\\Fortify\\Actions\\ConfirmPassword' => __DIR__ . '/..' . '/laravel/fortify/src/Actions/ConfirmPassword.php',
@@ -4050,6 +4199,9 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'PHPUnit\\Util\\Xml\\SuccessfulSchemaDetectionResult' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/SuccessfulSchemaDetectionResult.php',
         'PHPUnit\\Util\\Xml\\ValidationResult' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/ValidationResult.php',
         'PHPUnit\\Util\\Xml\\Validator' => __DIR__ . '/..' . '/phpunit/phpunit/src/Util/Xml/Validator.php',
+        'PackageVersions\\FallbackVersions' => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions/FallbackVersions.php',
+        'PackageVersions\\Installer' => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions/Installer.php',
+        'PackageVersions\\Versions' => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions/Versions.php',
         'ParagonIE\\ConstantTime\\Base32' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base32.php',
         'ParagonIE\\ConstantTime\\Base32Hex' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base32Hex.php',
         'ParagonIE\\ConstantTime\\Base64' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base64.php',
@@ -4389,6 +4541,9 @@ class ComposerStaticInit02ea61795f168d1513376acacc149370
         'PragmaRX\\Google2FA\\Support\\Base32' => __DIR__ . '/..' . '/pragmarx/google2fa/src/Support/Base32.php',
         'PragmaRX\\Google2FA\\Support\\Constants' => __DIR__ . '/..' . '/pragmarx/google2fa/src/Support/Constants.php',
         'PragmaRX\\Google2FA\\Support\\QRCode' => __DIR__ . '/..' . '/pragmarx/google2fa/src/Support/QRCode.php',
+        'Prologue\\Alerts\\AlertsMessageBag' => __DIR__ . '/..' . '/prologue/alerts/src/AlertsMessageBag.php',
+        'Prologue\\Alerts\\AlertsServiceProvider' => __DIR__ . '/..' . '/prologue/alerts/src/AlertsServiceProvider.php',
+        'Prologue\\Alerts\\Facades\\Alert' => __DIR__ . '/..' . '/prologue/alerts/src/Facades/Alert.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
