@@ -26,9 +26,9 @@ class CheckIfAdmin
      *
      * @return bool [description]
      */
-    private function checkIfUserIsAdmin($user)
+    private function checkIfUserIsAdmin($admin)
     {
-        // return ($user->is_admin == 1);
+        // return ($admin->is_admin == 1);
         return true;
     }
 

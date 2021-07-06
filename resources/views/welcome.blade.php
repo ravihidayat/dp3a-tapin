@@ -1,5 +1,4 @@
 @extends('layouts.main')
-
 @section('content')
 <body>
 <div class="jumbotron jumbotron-fluid jumbotron-custom ">

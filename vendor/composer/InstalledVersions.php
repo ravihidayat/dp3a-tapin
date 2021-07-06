@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '98c5e73e21e3fd6f6b393c8abfe7cf58e3e156de',
+    'reference' => '848ec38e9d46a194edb071346a31a3bdd9a846a4',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -70,6 +70,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '5cb564a0d9f3b18754bdb50a48eb645d99f82af0',
+    ),
+    'backpack/permissionmanager' => 
+    array (
+      'pretty_version' => '6.0.9',
+      'version' => '6.0.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b605c2ce298e18c1443c47f6bbdfdf98b7e645b2',
     ),
     'bacon/bacon-qr-code' => 
     array (
@@ -561,6 +570,24 @@ private static $installed = array (
       ),
       'reference' => '0b8b3d300cc948217f7547502b6de5db6fbafa70',
     ),
+    'laravel-shift/blueprint' => 
+    array (
+      'pretty_version' => 'v1.24.1',
+      'version' => '1.24.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '759eac3cbee489ced687feac321c9c5d845c634f',
+    ),
+    'laravel-shift/faker-registry' => 
+    array (
+      'pretty_version' => 'v0.1.0',
+      'version' => '0.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '051c1d50f428b699ee9456072f9c54cb073a006f',
+    ),
     'laravel/fortify' => 
     array (
       'pretty_version' => 'v1.7.14',
@@ -595,7 +622,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '98c5e73e21e3fd6f6b393c8abfe7cf58e3e156de',
+      'reference' => '848ec38e9d46a194edb071346a31a3bdd9a846a4',
     ),
     'laravel/sail' => 
     array (
@@ -1169,6 +1196,15 @@ private static $installed = array (
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
     ),
+    'spatie/laravel-permission' => 
+    array (
+      'pretty_version' => '4.2.0',
+      'version' => '4.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a6e4122b65094baba7f98df153af0768ef910c85',
+    ),
     'swiftmailer/swiftmailer' => 
     array (
       'pretty_version' => 'v6.2.7',
@@ -1434,6 +1470,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '46aa709affb9ad3355bd7a810f9662d71025c384',
+    ),
+    'symfony/yaml' => 
+    array (
+      'pretty_version' => 'v5.3.3',
+      'version' => '5.3.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '485c83a2fb5893e2ff21bf4bfc7fdf48b4967229',
     ),
     'theseer/tokenizer' => 
     array (

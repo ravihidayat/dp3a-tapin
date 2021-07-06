@@ -1,0 +1,6 @@
+models:
+  Models\Berita:
+
+  Models\Galeri:
+
+  Models\Profil:

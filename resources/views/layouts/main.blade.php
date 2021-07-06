@@ -47,7 +47,7 @@
                     <a class="nav-item {{ Request::path() === 'layanan' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/layanan') }}">Layanan</a>
                     <a class="nav-item {{ Request::path() === 'aduan' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/aduan') }}">Buat Aduan</a>
                     <a class="nav-item {{ Request::path() === 'kontak' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/kontak') }}">Kontak</a>
-                    <a class="nav-item {{ Request::path() === 'dashboard' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/dashboard') }}">
+                    <a class="nav-item {{ Request::path() === 'dashboard' ? 'active' : ''}} nav-item-custom nav-link p-2" href="{{ url('/home') }}">
                         <div class="profile">
                             <div class="profile-circle">
                                 <div class="profile-user"><img src="{{asset('assets/user.png')}}" alt="User"></div>

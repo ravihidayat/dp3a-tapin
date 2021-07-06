@@ -2,16 +2,16 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Http\Middleware\Authenticate;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class Admin extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory;
     use CrudTrait;
     use HasRoles;
     /**
@@ -19,13 +19,14 @@ class User extends Authenticatable
      *
      * @var array
      */
-    public $table = 'user';
+    public $table = 'admin';
     public $primaryKey = 'id';
 
     protected $fillable = [
         'id',
         'name',
         'email',
+        // 'is_admin',
         'telephone_number',
         'password',
     ];
@@ -46,6 +47,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        // 'email_verified_at' => 'datetime',
     ];
 }
