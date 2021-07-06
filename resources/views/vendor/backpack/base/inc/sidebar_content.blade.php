@@ -10,3 +10,5 @@
         <li class="nav-item"><a class="nav-link" href="{{ backpack_url('permission') }}"><i class="nav-icon la la-key"></i> <span>Perizinan</span></a></li>
     </ul>
 </li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('berita') }}'><i class='nav-icon la la-newspaper'></i> Berita</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('galeri') }}'><i class='nav-icon la la-image'></i> Galeri</a></li>

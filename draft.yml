@@ -1,6 +1,18 @@
 models:
   Models\Berita:
+    judul: string:255
+    slug: string unique default:''
+    konten: longtext
+    image: string:255 nullable
+    dibuat_pada: timestamp nullable
+    diubah_pada: timestamp nullable
+    timestamps: true
+    softDeletes: true
 
   Models\Galeri:
+    image: string:255 nullable
+    slug: string unique default:''
+    timestamps: true
+    softDeletes: true
 
-  Models\Profil:
+seeders: Berita, Galeri

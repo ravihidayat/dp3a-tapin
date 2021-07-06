@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '848ec38e9d46a194edb071346a31a3bdd9a846a4',
+    'reference' => 'ea225c9bcfca01d1f450f5c3b232aac05d4635d7',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -321,12 +321,12 @@ private static $installed = array (
     ),
     'guzzlehttp/psr7' => 
     array (
-      'pretty_version' => '2.0.0',
-      'version' => '2.0.0.0',
+      'pretty_version' => '1.8.2',
+      'version' => '1.8.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '1dc8d9cba3897165e16d12bb13d813afb1eb3fe7',
+      'reference' => 'dc960a912984efb74d0a90222870c72c87f10c91',
     ),
     'hamcrest/hamcrest-php' => 
     array (
@@ -554,6 +554,15 @@ private static $installed = array (
         0 => 'v8.49.1',
       ),
     ),
+    'intervention/image' => 
+    array (
+      'pretty_version' => '2.5.1',
+      'version' => '2.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'abbf18d5ab8367f96b3205ca3c89fb2fa598c69e',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -622,7 +631,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '848ec38e9d46a194edb071346a31a3bdd9a846a4',
+      'reference' => 'ea225c9bcfca01d1f450f5c3b232aac05d4635d7',
     ),
     'laravel/sail' => 
     array (
@@ -945,22 +954,6 @@ private static $installed = array (
       'reference' => '2dfb5f6c5eff0e91e20e913f8c5452ed95b86621',
     ),
     'psr/http-client-implementation' => 
-    array (
-      'provided' => 
-      array (
-        0 => '1.0',
-      ),
-    ),
-    'psr/http-factory' => 
-    array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '12ac7fcd07e5b077433f5f2bee95b3a771bf61be',
-    ),
-    'psr/http-factory-implementation' => 
     array (
       'provided' => 
       array (
