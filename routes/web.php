@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+Use App\Http\Controllers\GaleriController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,5 +40,13 @@ Route::get('/aduan', function () {
 Route::get('/kontak', function () {
     return view('kontak');
 });
+
+Route::get('/', [App\Http\Controllers\GaleriController::class, 'index'])->name('/');
+
+// Route::get('/', [App\Http\Controllers\BeritaController::class, 'index'])->name('/');
+
+Route::get('/galeri', [App\Http\Controllers\GaleriController::class, 'displayAll'])->name('/galeri');
+
+Route::get('/berita', [App\Http\Controllers\BeritaController::class, 'displayAll'])->name('/berita');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->name('auth.login');

@@ -180,30 +180,14 @@
     <li data-target="#slider" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner carousel-inner-custom justify-content-center berita2-img">
-    <div class="carousel-item carousel-item-custom active">
-      <img src="https://picsum.photos/1000/600/"> 
-      <div class="carousel-caption carousel-caption-custom">
-        <h4>Welcome</h4>
-        <p>Travel! Enjoy!</p>
-      </div>
+  @foreach($galeris as $key => $galeri)
+    <div class="carousel-item carousel-item-custom {{$key == 0 ? 'active' : '' }}">
+      <img src="{{ asset($galeri->image) }}"> 
     </div>
-
-    <div class="carousel-item carousel-item-custom" id="slide2">
-      <img src="https://picsum.photos/1000/600/">
-      <div class="carousel-caption carousel-caption-custom">
-        <h4>Welcome</h4>
-        <p>Travel! Enjoy!</p>
-      </div>
-    </div>
-
-    <div class="carousel-item carousel-item-custom" id="slide3">
-      <img src="https://picsum.photos/1000/600/">
-      <div class="carousel-caption carousel-caption-custom">
-        <h4>Welcome</h4>
-        <p>Travel! Enjoy!</p>
-      </div>
-    </div>
-
+    @if($key == 2)
+    @break
+  @endif
+  @endforeach
   </div>
   <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
