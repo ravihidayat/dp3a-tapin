@@ -45,7 +45,7 @@
     @break
   @endif
   @endforeach
-  </div>
+</div>
   <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -55,22 +55,22 @@
     <span class="sr-only">Next</span>
   </a>
 
-@foreach($beritasPaginate as $berita)
-<div class="col-md-3" style="float:left">
-        <div class="card mb-2">
-          <img class="card-img-top"
-            src="{{ asset($berita->image) }}" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">{{ $berita->judul }}</h4>
-            <p class="card-text">{!! $berita->konten !!}</p>
+  @foreach($beritasPaginate as $berita)
+  <div class="col-md-3 p-2" style="float:left">
+          <div class="card mb-2">
+            <img class="card-img-top"
+              src="{{ asset($berita->image) }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{ $berita->judul }}</h4>
+              <p class="card-text">{!! $berita->konten !!}</p>
+            </div>
           </div>
-        </div>
-</div>
+  </div>
+  @endforeach
 
-
-@endforeach
-<div class="d-flex justify-content-center">
-    {!! $beritasPaginate->links() !!}
+  <div>
+    {{ $beritasPaginate->links() }}
+  </div>
 </div>
 
 @endsection
