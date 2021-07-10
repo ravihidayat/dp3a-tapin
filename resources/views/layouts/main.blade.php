@@ -85,7 +85,11 @@
                 <div class="mx-auto p-2 d-flex flex-column">
                     <div class="p-2">
 
-                        <a class="navbar-brand justify-content-center align-middle font-footer" href="{{ url('/') }}"><img src="{{asset('assets/logo.png')}}" alt="Logo" class="footer-logo"><span class="text-wrap">{{ config('app.name', 'Laravel') }}</span></a>
+                        <a class="navbar-brand justify-content-center align-middle font-footer" href="{{ url('/') }}"><img src="{{asset('assets/logo.png')}}" alt="Logo" class="footer-logo mr-5">
+                        <div class="ml-5">
+                        <span class="text-wrap">{{ config('app.name', 'Laravel') }}</span>
+                        </div>
+                        </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltBottom" aria-controls="navbarNavAltBottom" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>

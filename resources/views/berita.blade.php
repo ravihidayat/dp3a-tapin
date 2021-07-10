@@ -25,7 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <div class="carousel slide" id="slider" data-ride="carousel">
+  <div class="carousel slide" id="slider" data-ride="carousel">
   <!--indicators-->
   <ol class="carousel-indicators">
     <li data-target="#slider" data-slide-to="0" class="active"></li>
@@ -54,7 +54,9 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
 
+<div class="row">
   @foreach($beritasPaginate as $berita)
   <div class="col-md-3 p-2" style="float:left">
           <div class="card mb-2">
@@ -67,10 +69,9 @@
           </div>
   </div>
   @endforeach
-
-  <div>
-    {{ $beritasPaginate->links() }}
-  </div>
 </div>
 
+  <div class="d-flex justify-content-end mt-8">
+    {{ $beritasPaginate->links() }}
+  </div>
 @endsection
