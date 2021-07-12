@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "ext-gd": "^8.0",
         "arrilot/laravel-widgets": "^3.13",
         "backpack/crud": "4.1.*",
         "backpack/permissionmanager": "^6.0",
@@ -16,8 +17,7 @@
         "laravel/fortify": "^1.7",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
-        "laravel/ui": "^3.2",
-        "gd": "*"
+        "laravel/ui": "^3.2"
     },
     "require-dev": {
         "backpack/generators": "^3.1",
