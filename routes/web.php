@@ -50,3 +50,5 @@ Route::get('/galeri', [App\Http\Controllers\GaleriController::class, 'displayAll
 Route::get('/berita', [App\Http\Controllers\BeritaController::class, 'displayAll'])->name('/berita');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->name('auth.login');
+
+Route::post('/register', [App\Http\Controllers\Auth\RegisteredUserController::class, 'store']);
