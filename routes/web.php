@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 Use App\Http\Controllers\GaleriController;
+use Intervention\Image;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,3 +53,9 @@ Route::get('/berita', [App\Http\Controllers\BeritaController::class, 'displayAll
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->name('auth.login');
 
 Route::post('/register', [App\Http\Controllers\Auth\RegisteredUserController::class, 'store']);
+
+Route::get('storage/{filename}', function ($filename)
+{
+    return Image::make(storage_path('public/' . $filename))->response();
+});
+
