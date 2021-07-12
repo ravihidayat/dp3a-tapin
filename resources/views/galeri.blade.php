@@ -12,7 +12,7 @@
                 <p class="lead page-sub-header">Nikmati foto-foto terbaru dari aktivitas dan kegiatan yang kami laksanakan di sini.</p>
             </div>
         </div>
-        <div class="col-5">
+        <div>
             <!-- Put picture here -->
             <img src="{{ asset('assets/galeri.png') }}" alt="Galeri" class="galeri-img">
         </div>
@@ -23,21 +23,9 @@
 
 <div class="galeri galeri-p2">
     <div class="row p-5">
-        <div class="col-3">Galeri1</div>
-
-        <div class="col-3">Galeri2</div>
-
-        <div class="col-3">Galeri3</div>
-
-        <div class="col-3">Galeri4</div>
-
-        <div class="col-3">Galeri5</div>
-
-        <div class="col-3">Galeri6</div>
-
-        <div class="col-3">Galeri7</div>
-
-        <div class="col-3">Galeri8</div>
+    @foreach($galeris as $galeri)
+        <div class="col-3"><img src="{{ asset($galeri->image) }}" style="height: 350px; width: 350px; margin: 0px 160px"></div>
+    @endforeach
     </div>
 </div>
 @endsection

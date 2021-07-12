@@ -1,5 +1,4 @@
 @extends('layouts.main')
-
 @section('content')
 <body>
 <div class="jumbotron jumbotron-fluid jumbotron-custom ">
@@ -50,116 +49,25 @@
 
   <!--Slides-->
   <div class="carousel-inner" role="listbox" style="height:550px;">
-
+  @foreach($beritas->chunk(4) as $berita)
     <!--First slide-->
-    <div class="carousel-item active">
-
+    <div class="carousel-item {{ $loop->first ? 'active' : ''}}">
+      @foreach($berita as $siji)
       <div class="col-md-3" style="float:left">
        <div class="card mb-2">
           <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+            src="{{ asset($siji->image) }}" alt="Card image cap">
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
+            <h4 class="card-title">{{ $siji->judul }}</h4>
+            <p class="card-text">{!! $siji->konten !!}</p>
           </div>
         </div>
       </div>
-
-      <div class="col-md-3" style="float:left">
-        <div class="card mb-2">
-          <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3" style="float:left">
-        <div class="card mb-2">
-          <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-          </div>
-        </div>
-      </div>
+      @endforeach
       
-       <div class="col-md-3" style="float:left">
-       <div class="card mb-2">
-          <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-          </div>
-        </div>
-      </div>
-
     </div>
+  @endforeach
     <!--/.First slide-->
-
-    <!--Second slide-->
-    <div class="carousel-item">
-
-      <div class="col-md-3" style="float:left">
-        <div class="card mb-2">
-          <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3" style="float:left">
-        <div class="card mb-2">
-          <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3" style="float:left">
-        <div class="card mb-2">
-          <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-3" style="float:left">
-        <div class="card mb-2">
-          <img class="card-img-top"
-            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's content.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <!--/.Second slide-->
-
-   
 
   </div>
   <!--/.Slides-->
@@ -181,30 +89,14 @@
     <li data-target="#slider" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner carousel-inner-custom justify-content-center berita2-img">
-    <div class="carousel-item carousel-item-custom active">
-      <img src="https://picsum.photos/1000/600/"> 
-      <div class="carousel-caption carousel-caption-custom">
-        <h4>Welcome</h4>
-        <p>Travel! Enjoy!</p>
-      </div>
+  @foreach($galeris as $key => $galeri)
+    <div class="carousel-item carousel-item-custom {{$key == 0 ? 'active' : '' }}">
+      <img src="{{ asset($galeri->image) }}"> 
     </div>
-
-    <div class="carousel-item carousel-item-custom" id="slide2">
-      <img src="https://picsum.photos/1000/600/">
-      <div class="carousel-caption carousel-caption-custom">
-        <h4>Welcome</h4>
-        <p>Travel! Enjoy!</p>
-      </div>
-    </div>
-
-    <div class="carousel-item carousel-item-custom" id="slide3">
-      <img src="https://picsum.photos/1000/600/">
-      <div class="carousel-caption carousel-caption-custom">
-        <h4>Welcome</h4>
-        <p>Travel! Enjoy!</p>
-      </div>
-    </div>
-
+    @if($key == 2)
+    @break
+  @endif
+  @endforeach
   </div>
   <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -219,6 +111,7 @@
 <div class="hubungi-margin"></div>
 
 <div class="hub">
+<br>
   <br>
     <h1 class="text-center">Hubungi Kami</h1>
     <p class="text-center">Mohon perhatian, pesan akan kami balas dalam jangka waktu 12 jam kerja</p>

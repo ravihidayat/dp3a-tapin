@@ -1,0 +1,12 @@
+created:
+    - database/factories/Models/BeritaFactory.php
+    - database/factories/Models/GaleriFactory.php
+    - database/migrations/2021_07_06_134923_create_beritas_table.php
+    - database/migrations/2021_07_06_134924_create_galeris_table.php
+    - app/Models/Berita.php
+    - app/Models/Galeri.php
+    - database/seeders/BeritaSeeder.php
+    - database/seeders/GaleriSeeder.php
+models:
+    Models\Berita: { judul: 'string:255', slug: 'string unique default:''''', konten: longtext, image: 'string:255 nullable', dibuat_pada: 'timestamp nullable', diubah_pada: 'timestamp nullable', timestamps: timestamps, softdeletes: softDeletes }
+    Models\Galeri: { image: 'string:255 nullable', slug: 'string unique default:''''', timestamps: timestamps, softdeletes: softDeletes }

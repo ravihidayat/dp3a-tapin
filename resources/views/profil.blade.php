@@ -55,13 +55,17 @@
     </div>
     <div>
         <div class="kotak-bidang">
-            <div class="bendahara"></div>
-            <div class="sekre"></div>
-            <div class="staff2"></div>
-            <div class="staff1"></div>
+            <div class="bendahara">
+            </div>
+            <div class="sekre">
+            </div>
+            <div class="staff2">
+            </div>
+            <div class="staff1">
+            </div>
             <div class="kadin">
                 <h2>Kepala Dinas</h2>
-                <h3> Hj. Lailian Noor, S.Sos, MM</h3>
+                <h3> Hj. Lailian Noor, S.Sos., MM.</h3>
             </div> 
         </div>
         <div class="KHPK">
@@ -75,7 +79,7 @@
                  <div class="staff1"></div>
                  <div class="kadin">
                     <h2>Kepala Bidang</h2>
-                    <h3>Noorhalimah S.KM, MM</h3>
+                    <h3>Noorhalimah S.KM., MM.</h3>
                  </div> 
             </div>
         </div>
@@ -90,7 +94,7 @@
                  <div class="staff1"></div>
                  <div class="kadin">
                     <h2>Kepala Bidang</h2>
-                    <h3>Noorhalimah S.KM, MM</h3>
+                    <h3>Henny Herlena, S.Pd., MA.</h3>
                  </div> 
             </div>
         </div>
@@ -105,7 +109,7 @@
                  <div class="staff1"></div>
                  <div class="kadin">
                      <h2>Kepala Bidang</h2>
-                     <h3>Noorhalimah S.KM, MM</h3>
+                     <h3>Hermadiansyah, S.Sos.</h3>
                  </div> 
             </div>
         </div>
