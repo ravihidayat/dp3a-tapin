@@ -4,10 +4,9 @@ A website made for The Women and Child Emporewent Institution in Tapin Regency, 
 
 # Contributors
 
-```
 1. Alifian Naufal Ravi Hidayat
 2. Dera Ayu Nur Isnantya ([@dera-ayu](https://github.com/dera-ayu))
-```
+
 # Demo
 
 This website itself is hosted on ```https://dp3atapin.herokuapp.com/```
